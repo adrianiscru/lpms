@@ -1,0 +1,55 @@
+<?php # Script 16.1 - header.html
+// This page begins the HTML header for the site.
+
+// Start output buffering:
+ob_start();
+
+// Initialize a session:
+session_start();
+
+// Check for a $page_title value:
+if (!isset($page_title)) {
+	$page_title = 'User Registration';
+}
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><?php echo $page_title;?></title>
+    
+    <meta name="description" content="<?php echo $page_description; ?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta nane="author" content="Adrian Iscru - https://adrian.iscru.net ">
+	
+	<!-- IMPORTED FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic,100italic' rel='stylesheet' type='text/css'>
+	
+    <!-- ADRIAN - INCLUDED STYLESHEET START -->
+    <style>
+  <?php include("includes/css/style.css"); ?>
+</style>
+    <!-- ADRIAN - INCLUDED STYLESHEET END -->
+    
+<!-- ADRIAN - COOKIE POLICY START -->
+<!-- THIS PART MUST BE PLACED IN THE HEAD -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<!-- ADRIAN - COOKIE POLICY END -->
+
+</head>
+<body class="cover">
+
+<div class="top-nav">
+<div class="navigation">
+			
+				<label for="show-menu" class="show-menu">MENU</label>
+					
+				<input type="checkbox" id="show-menu" role="button">
+					<ul id="menu">
+						<?php include ('includes/menu-top.html');?>
+					</ul>
+			
+		</div>	
+</div>

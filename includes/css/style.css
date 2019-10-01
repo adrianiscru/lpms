@@ -1,0 +1,536 @@
+html {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300; color: #666;
+}
+
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.boxed-container {
+    padding: 1rem;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.top-nav {
+    background-color: #444444;
+}
+
+#menu-1 {
+    background-color: aliceblue;
+}
+
+#menu-1 li {
+    display: inline;
+    
+}
+
+#menu-1 li a {
+	display:block;
+	width: auto;
+	height: auto;
+	padding: .5rem;
+	text-align: left;
+	line-height: 1.4;
+	font-weight: 400;
+	font-size: .8em;
+	color: #fff;
+	background: #698ecf;
+	text-decoration: none;
+    margin-left: -40px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background: url(images/cover-2.png) repeat-x  ;
+    background-size:cover;
+}
+
+.jumbo-up { 
+    text-align: center; 
+    height: auto; 
+    min-height: 580px;
+    margin-top: -20px;
+}
+
+.jumbo-up h1 { 
+    font-size: 2.8rem; 
+    font-weight: 300; 
+    color: #4472C4;
+    padding-top: 1rem; 
+}
+
+.jumbo-up h2 { 
+    font-size: 1.4em; 
+    font-weight: 300; 
+    color: #4472C4; 
+}
+
+.jumbo-short { 
+    text-align: center; 
+    height: auto; 
+    margin-top: -20px;
+    background: #FFF;
+}
+
+.jumbo-short h1 { 
+    font-size: 3.6em; 
+    font-weight: 200; 
+    color:cornflowerblue;
+}
+
+.jumbo-short h2 { 
+    font-size: 1.6em; 
+    font-weight: 200; 
+    color: #FFF; 
+    margin-bottom: 1em; 
+    margin-top: -30px; 
+}
+
+.space-div {
+    margin-bottom: 200px;
+}
+
+.footer { 
+    background-color: #000000; 
+    color: #555; 
+    border-top:solid 4px #09162C; 
+    height: auto; 
+    font-size: .8em; 
+}
+
+/* Footer navigation */
+.footer li { 
+    display:block;  
+    padding: .4rem 0rem .4rem 0rem; 
+}
+
+.footer li a { 
+    text-decoration: none; 
+    color: #FFF; 
+    display: block; 
+    font-weight: 400; 
+    font-size: .9em;
+    margin-left: -2rem;
+}
+
+.footer li a:hover {
+    opacity:0.7; 
+    transition-duration:0.7s; 
+}
+
+/* Footer links */
+.footer a { 
+    text-decoration: none; 
+    color: #555; 
+    display: inline;
+}
+
+.footer a:hover {
+    color: #FFFFFF; 
+    opacity:0.7; 
+    transition-duration:0.7s; 
+}
+
+.bottom-nav {  border-bottom: dashed 1px #555; text-align: left; }
+    
+.left {
+    float: left;
+}
+
+.right {
+    text-align: center;
+}
+/* ADRIAN - TEXT STYLING */
+
+.mobile-center {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.text-center {
+    text-align:center;
+}
+    
+.text-left {
+    text-align:left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-oblique { 
+    font-style: oblique; 
+}
+
+.button { 
+    border:solid 3px #5376b2; 
+    font-size:medium; 
+    font-weight:bold; 
+    text-align:center; 
+    padding: 1rem 2rem;
+    width: auto;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.button a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.button1 {
+    color:#fff; 
+    background-color:#5376b2;
+}
+
+.button2 {
+    color:#5376b2; 
+    background-color:#fff;
+}
+
+.button1:hover { 
+    color: #5376b2; 
+    background-color: #fff; 
+    border:solid 3px #5376b2; 
+}
+
+.button2:hover { 
+    color: #fff; 
+    background-color: #5376b2; 
+    border:solid 3px #5376b2; 
+}
+
+
+.fade_btn   {opacity:0.7; transition-duration:0.7s; }
+.fade_btn:hover     {opacity:1; transition-duration:0.7s; }
+
+
+
+/* BACKGROUNDS AND COLOURS */
+/* USED IN INDEX-4*/
+
+.set-1-a {
+    background-color: #085a9d;
+    color: #FFFFFF;
+}
+
+.set-1-b {
+    background-color: #FFFFFF;
+    color: #085a9d;
+}
+
+.set-2-a {
+    background-color: #5376b2;
+    color: white;
+    padding: .2rem;
+}
+
+table .set-2-a a {
+    text-decoration: none;
+    color: white;
+}
+
+
+    
+/* ADRIAN - BOX SIZING AND GRID SYSTEM - MOBILE UP */
+* {
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+img-resp {
+    width: 100%;
+    height: auto;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+/* FORMS, INPUTS */
+
+.input {
+	float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea{overflow:auto; max-width: 100%; height: auto; min-height: 200px;}
+
+fieldset {border: 2px #d5ddea dashed;}
+
+.error {color: red;}
+
+
+
+/* ADRIAN - TABLET SIZE - PORTRAIT */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+
+    .right {
+    text-align: right;
+}
+    .mobile-center {
+    text-align: left;
+    margin-bottom: -3.2rem;
+}
+    
+
+    
+}
+
+/* ADRIAN - DESKTOP SIZE - 768 PX  TO 900 PX */
+@media only screen and (min-width: 768px) {
+    
+	
+    
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    .bottom-nav {  border-bottom: dashed 1px #000000; text-align: center; }
+    .footer {  font-size: .9em; left: 0; bottom: 0; width: 100%; }
+    .footer li { display: inline; color: #FFFFFF; font-size: .8em; font-weight: 600; padding: inherit; }
+    .footer li a { display: inline;}
+    .footer a { display: inline;}
+
+.jumbo-up h1 { 
+    font-size: 5rem; 
+}
+
+.jumbo-up h2 { 
+    font-size: 1.8em; 
+} 
+    
+.jumbo-short h1 { 
+    font-size: 4em; 
+}
+
+.jumbo-short h2 { 
+    font-size: 1.8em; 
+}
+	
+.boxed-container {
+        margin: auto;
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .shadow-box {
+        box-shadow:5px 5px 15px #CCC;
+    }
+      
+    
+}
+
+/* ADRIAN - DESKTOP SIZE - 960 PX UP TO 1200 PX */
+
+@media only screen and (min-width: 960px) {
+    
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+        
+    .boxed-container {
+        margin: auto;
+        width: auto;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+    
+
+}
+
+
+
+/*------------------------------*\
+    NAVIGATION - NORMAL STYLE
+\*------------------------------*/
+
+.top-nav {
+    text-align: center; height:auto; max-height: 60px; 
+}
+
+/*Strip the ul of padding and list styling*/
+.navigation ul {
+    list-style-type:none; margin-top: -2px; position: relative;
+}
+
+/*Create a horizontal list with spacing*/
+.navigation li {
+	display:inline-block;
+}
+
+/*Style for menu links*/
+.navigation li a {
+	display:block;
+	width: auto;
+	height: auto;
+	padding: 1em;
+	text-align: center;
+	line-height: 1.4;
+	font-weight: 400;
+	font-size: .8em;
+	color: #fff;
+	background: #444444;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+.navigation li:hover a {
+	background-color: #555555;
+}
+
+/*Style for dropdown links*/
+.navigation li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height:auto;
+	
+}
+
+/*Hover state for dropdown links*/
+.navigation li:hover ul a:hover {
+	background: #0B9ED4;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+.navigation li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.navigation li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.navigation li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+.navigation ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.navigation .show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #444444;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+    font-weight: 400;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*------------------------------*\
+    NAVIGATION - RESPONSIVE STYLE
+\*------------------------------*/
+
+@media screen and (max-width : 760px){
+
+	.fade_btn   {opacity:0.95; transition-duration:0.7s; }
+	.fade_btn:hover     {opacity:1; transition-duration:0.7s; }
+	
+	/*Make dropdown links appear inline*/
+	.navigation ul {
+	width: auto;
+	margin-top: 10px;
+	margin-left: -40px;
+	display: none;
+	
+	}
+	/*Create vertical spacing*/
+	.navigation li {
+		margin-bottom: 0;
+		border-bottom: solid 1px #666666;
+	}
+	/*Make all menu links full width*/
+	.navigation ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.navigation .show-menu {
+		display:block;
+        height: auto;
+        min-height: 60px;
+        font-size: 1rem;
+		
+	}
+    
+
+}
+
+
+/* ADRIAN - DESKTOP SIZE - OVER 1200 PX */
+
+@media only screen and (min-width: 1200px) {
+
+
+
+}

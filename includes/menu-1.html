@@ -1,0 +1,41 @@
+<!-- End of Content -->
+
+<ul id="menu-1">
+<?php # Script 16.2 - menu-1.html
+// This page add the Menu template.
+
+// Display links based upon the login status:
+if (isset($_SESSION['user_id'])) {
+
+    echo '
+        <li><a class="fade_btn" href="view_profile.php" title="View User Profile">Profile</a></li>
+        <li><a class="fade_btn" href="search_item.php" title="Search Lost Item">Search Item</a></li>
+        <li><a class="fade_btn" href="report_item.php" title="Record Lost Item">Report Item</a></li>
+';
+
+// Add links if the user is an administrator:
+  if ($_SESSION['user_level'] == 1) {
+
+   	echo '
+        <li><a class="fade_btn" href="view_items.php" title="View All Items">View All Items</a></li>
+        <li><a class="fade_btn" href="view_users.php" title="View All Users">View All Users</a></li>
+        <li><a class="fade_btn" href="add_user.php" title="Add Users To The System">Add User</a></li>        
+';
+
+	}
+
+
+} else { //  Not logged in.
+
+	echo '
+
+<li><a class="fade_btn" href="register.php" title="Register for the Site">Register</a></li>
+<li><a class="fade_btn" href="login.php" title="Login">Login</a></li>
+<li><a class="fade_btn" href="forgot_password.php" title="Password Retrieval">Reset Password</a></li>
+';
+
+}
+?>
+
+</ul> <!-- a -->
+
